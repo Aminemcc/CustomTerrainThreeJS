@@ -140,9 +140,17 @@ document.addEventListener("keydown", (event) => {
         radius_z = 1;
     }
     else if(name == "\\"){
-        editHeight(1);
+        radius_x += 1;
+        radius_z += 1;
     }
     else if(name == "p"){
+        if(radius_x > 0) radius_x -= 1;
+        if(radius_z > 0) radius_z -= 1;
+    }
+    else if(name == "\'"){
+        editHeight(1);
+    }
+    else if(name == ";"){
         editHeight(-1);
     }
     else if(name == " ") freeze = !freeze
