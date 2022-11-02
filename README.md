@@ -1,2 +1,0 @@
-# CustomTerrainThreeJS
-A Custom Terrain
